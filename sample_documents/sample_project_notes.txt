@@ -1,0 +1,21 @@
+Project Phoenix: Quarterly System Architecture Review
+Date of Review: September 28, 2024
+Author: System Architecture Board (Lead: Dr. Marcus Vance)
+
+Executive Summary:
+Project Phoenix represents our next-generation document processing infrastructure.
+The system is slated for pilot deployment across 3 regional branches on November 10, 2024.
+
+Key Architecture Decisions:
+1. Microservice Framework: All backend endpoints will migrate to Python FastAPI.
+2. Document Parsing: PyMuPDF will handle PDF rasterization and text extraction with page preservation.
+3. LLM Integration: Google Gemini 2.5 Flash will be utilized for high-throughput zero-hallucination structured extraction.
+
+Key Milestones:
+- Milestone 1: Core Parsing Engine Completed - October 15, 2024
+- Milestone 2: Verification Engine Integration - October 30, 2024
+- Milestone 3: Production Rollout - November 10, 2024
+
+Open Questions & Risk Assessment:
+- Document Security: End-to-end encryption must be validated by the Compliance Officer prior to pilot launch.
+- Scanned PDF Handling: Currently, scanned PDFs require a digital text layer; OCR roadmap is deferred to v2.0.

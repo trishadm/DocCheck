@@ -1,0 +1,31 @@
+# Environment and Secret files
+.env
+.env.local
+.streamlit/secrets.toml
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Temporary and Uploaded Files
+temp_*
+*.tmp
+*.log
+downloads/
+output/
+
+# IDE & OS Metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
